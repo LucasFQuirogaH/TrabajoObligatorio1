@@ -1,0 +1,116 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src:url(/Images/Azonix.otf)
+}
+
+h1 {
+    font-family: myFirstFont;
+    color: white;
+
+}
+
+header { 
+    background-color: #231F54;
+    color: white;
+    margin: 0%;
+    display: flex;
+    align-content: space-evenly;
+}
+
+nav{
+    text-align: center;
+    padding: 5px;
+}
+.nav {
+    text-decoration: none;
+    color:white;
+    background-color: #2f5496;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: myFirstFont;
+}
+
+section {
+    text-align: center;
+    padding: 5px;
+}
+
+#separador {
+    height: 30vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0%;
+}
+
+img { 
+    margin: 0%;
+
+}
+
+#about, #how, #prices {
+    background-color: #333f4f;
+    color: white;
+    height: 20vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+#services, #team {
+    background-color: #6699ff;
+    color: #201D3D;
+    height: 20vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+#contact {
+    background-color: #6699ff;
+    color: #201D3D;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #201D3D;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 0;
+    padding: 20px;
+}
+
+fieldset {
+    width: 48vw;
+}
+
+.fa{
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+label {
+    font-weight: bold;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}

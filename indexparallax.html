@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/main.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="/Images/icono.ico" type="image/x-icon">
-    <title>Developers 2.0</title>
+    <link rel="stylesheet" href="/CSS2/main.css">
+    <title>Developers Parallax</title>
 </head>
 <body>
+    <nav class="wrapper">
         <header>
-            <img src="/Images/logo1.jpg" alt="" height="80px" width="80px"> 
-            <h1>Developers 2.0</h1>
-            <nav>
-            
-                <br>
-                <a class= "nav" href="#top">Home</a>
-                <a class= "nav" href="#about">Acerca de</a>
-                <a class= "nav" href="#services">Servicios</a>
-                <a class= "nav" href="#how">Cómo Funciona</a>
-                <a class= "nav" href="#team">Nuestro Equipo</a>
-                <a class= "nav" href="#prices">Financiamiento</a>
-                <a class= "nav" href="#contact">Contactanos</a>
-            </nav>
+            <img src="/Images/fondo.png" class="fondo">
+            <img src="/Images/frente.png" class="frente">
+            <div>
+            <h1 class="developers">Developers 2.0</h1> <br>
+            <h2 class="bienvenidos"> Te damos la bienvenida a la web del futuro</h2>
+            </div>
         </header>
-
+        <section class="barra">
+            <nav>
+                <br>
+                <a class= "barra1" href="#top">Home</a>
+                <a class= "barra1" href="#about">Acerca de</a>
+                <a class= "barra1" href="#services">Servicios</a>
+                <a class= "barra1" href="#how">Cómo Funciona</a>
+                <a class= "barra1" href="#team">Nuestro Equipo</a>
+                <a class= "barra1" href="#prices">Financiamiento</a>
+                <a class= "barra1" href="#contact">Contactanos</a>
+            </nav>
+        </section>
         <main>
-            <section id="separador">
-                <img src="/Images/separador.jpg" alt=""> 
-            </section>
+
             <section id="about">
                 <h1>Acerca de</h1>
                 <p>Un breve resumen de lo que hacemos, quienes somos y objetivos</p>
@@ -52,18 +55,20 @@
             </section>
             <section id="contact">
                 <h1>Contactanos</h1>
-                <div>
+                <div class="contacto">
                     <fieldset>
                         <form class="formulario" action="link">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vitae illo temporibus possimus perspiciatis? Deleniti, reiciendis fugiat! Culpa molestias accusantium, quam facere laborum consequuntur nisi iure debitis, placeat quisquam totam.</p>
                             <h3>Seguinos en las redes: </h3>
-                            <a class="fa fa-linkedin" href="http://www.linkedin.com"> Developers Linkedin</a>     
-                            <a class="fa fa-instagram" href="http://www.instagram.com"> Developers Instagram</a>
-                            <a class="fa fa-youtube" href="http://www.youtube.com"> Developers Youtube</a> 
+                            <div class="redes">
+                                <a class="fa fa-linkedin" href="http://www.linkedin.com"> Developers Linkedin</a>     
+                                <a class="fa fa-instagram" href="http://www.instagram.com"> Developers Instagram</a>
+                                <a class="fa fa-youtube" href="http://www.youtube.com"> Developers Youtube</a> 
+                            </div>
                         </form>
                     </fieldset>
                     <fieldset>
-                        <form class="formulario" action="link">
+                        <form class="formulario2" action="link">
                             <label for="nombre">Nombre y Apellido: </label>
                             <input type="text" size="30" id="nombre"> <br> <br>
                             <label for="email">Email: </label>
@@ -71,7 +76,7 @@
                             <label for="telefono"> Teléfono: </label>
                             <input type="number" name="" id="telefono"> <br> <br>
                             <label for="comentarios"> Comentarios: </label>
-                            <textarea name="comentarios" id="comentarios" cols="60" rows="10">Dejanos un comentario</textarea><br> <br>
+                            <textarea name="comentarios" id="comentarios" cols="60" rows="10" placeholder="¡Dejanos un comentario!"></textarea><br> <br>
                             <input type="submit" value="ENVIAR"> <br>
                             <input type="reset" value="BORRAR">
                         </form>
@@ -88,5 +93,6 @@
 
         <p>© Derechos Reservados Developers 2.0</p>
         </footer>
+    </nav>
 </body>
 </html>
