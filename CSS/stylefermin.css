@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Inspiration&family=Dancing+Script&display=swap');
+
+* {
+    font-family: 'Comfortaa';
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.fondo {
+    transform: translateZ(-10px) scale(2);
+}
+
+.frente {
+    transform: translateZ(-5px) scale(1.5);
+}
+
+.contenedorheader {
+    display: flex;
+    flex-direction: row;
+    transform: translateZ(-10px) scale (1);
+    margin-bottom: 7.5%;
+}
+
+.frente2 {
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.frente2:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.fondo,
+.frente, .contenedorheader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    z-index: -1;
+}
+
+h1 {
+    color:aliceblue;
+    font-family: 'Dancing Script', cursive;
+    font-weight: lighter;
+    font-size: 4vw;
+    text-align: right;
+    padding: 3%;
+    margin: 0%;
+}
+
+h2 {
+    color: aliceblue;
+    font-family: 'Dancing Script', cursive;
+    font-weight: lighter;
+    font-size: 3vw;
+    background-color: black;
+    padding: 3%;
+    align-self: center;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: -10;
+    background-color: color;
+}
+
+@media only screen and (max-width: 600px) {  
+    .contenedorheader {
+        display: none;
+    }
+    h1 {
+        font-size:10vw;
+    }
+    h2 {
+        font-size: 7vw;
+    }
+}
+@media only screen and (max-width: 1900px) {  
+    .contenedorheader {
+        opacity: 0;
+    }
+
+}
+/* -------------- Sección Pantalla de presentación, fuentes y header -------------- */
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    margin: 0;
+    background-color: black;
+}
+/* -------------- FIN SECCIÓN Presentación, fuentes y header -------------- */
+
+/* -------------- Sección Header -------------- */
+header {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.float {
+    position:fixed;
+    z-index: 1;
+    align-self:flex-end;
+}
+
+/* -------------- FIN SECCIÓN Header -------------- */
+
+/* -------------- Sección Secciones  -------------- */
+.musica {
+    background-color: black;
+    z-index: 7;
+    width: 100%;
+}
+section {
+    background-color: black;
+    width: 100%;
+    z-index: 5;
+    margin: 0;
+}
+.desarrollo {
+    background-color: black;
+    z-index: 6;
+    bottom: 0%;
+}
+
+/* -------------- FIN SECCIÓN Secciones -------------- */
+
+/* -------------- Sección Desarrollo  -------------- */
+.contenedordesarrollo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tarjetadesarrollo {
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    height: 40vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4vw;
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+.tarjetadesarrollo:hover {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 5px 5px 20px 1px rgba(255, 255, 255, 0.493);
+}
+
+.thumbnaildesarrollo {
+    width: 100%;
+    height: 80%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    overflow: hidden;
+}
+@media only screen and (max-width: 600px) {  
+    .contenedordesarrollo {
+        flex-direction: column;
+    }
+    .tarjetadesarrollo {
+        width: 80%;
+        height: 20%;
+        margin: 3vh;
+        margin-left: 10%;
+    }
+}
+
+/* -------------- FIN SECCIÓN Desarrollo -------------- */
+
+/* -------------- Sección Musica  -------------- */
+.contenedormusica {
+    display: flex;
+    flex-direction: row;
+}
+.tarjetamusica {
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    height: 40vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4vw;
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+.tarjetamusica:hover {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 5px 5px 20px 1px rgba(255, 255, 255, 0.493);
+}
+
+
+.thumbnail {
+    width: 100%;
+    height: 80%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    overflow: hidden;
+}
+
+.baja {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 2vw;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+.parti {
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {  
+    .contenedormusica{
+        display: flex;
+        flex-direction: none;
+        flex-wrap: wrap;
+    }
+
+    .tarjetamusica {
+        width: 40%;
+        height: 20vh;
+        margin: 2vh;
+        margin-left: 6%;
+    }
+}
+
+
+/* -------------- FIN SECCIÓN Musica -------------- */
+
+/* -------------- Sección Formularios de Contacto  -------------- */
+#contact {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    max-width: 32rem;
+    margin: auto;
+
+}
+
+.formulario {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    height: 30%;
+    resize: none;
+}
+
+fieldset {
+    width: 100%;
+    overflow: hidden;
+    padding: 2%;
+}
+
+label {
+    padding: 1%;
+    font-weight: bold;
+    padding-left:26px;
+    width:125px;
+    text-transform: uppercase;
+}
+
+input {
+    padding: 2%;
+    border-radius: 15px;
+}
+
+#botones {
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+}
+
+.boton1 {
+    border: none;
+    background-color: #333f4f;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.boton1:hover {
+    background-color:#6699ff; 
+    border: solid 1px;
+    color:#333f4f;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton2 {
+    border: none;
+    transition-duration: 0.2s;
+}
+
+.boton2:hover {
+    background-color: lightcoral; 
+    border: solid 1px;
+    color:#333f4f;
+    cursor: pointer;
+}
+/* -------------- FIN SECCIÓN Formularios -------------- */
+
+/* --------------  Sección Footer --------------  */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.fa{
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+.fa:hover {
+    opacity: 0.5;
+    text-shadow: 1px 1px 5px 5px lightblue;
+}
+/* -------------- FIN SECCIÓN Footer -------------- */

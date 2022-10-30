@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #666666;
+    padding: 0;
+}
+/* ----------------------------------Home ----------------------------------------- */
+.home #head {
+    padding: 100px 0;
+}
+
+.home #head .title {
+    font-size: 49px;
+    font-size: 3.0625rem;
+}
+
+.home #head .tagline {
+    font-size: 16px;
+    font-size: 1rem;
+    margin: 15px 0 0;
+}
+/* ----------------------------------Home ----------------------------------------- */
+
+/* ----------------------------------Head ----------------------------------------- */
+#head {
+    background: #f4f4f4 url(../Images/bg_head.jpg) top center;
+    background-size: cover;
+    color: #7c7c7c;
+    padding: 30px 0 35px 0;
+}
+
+#head img.img-circle {
+    display: block;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 9px solid rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+}
+#head .title {
+    font-family: "Roboto", sans-serif;
+    font-size: 49px;
+    font-size: 3.0625rem;
+    display: flex;
+    justify-content: center;
+}
+
+#head .tagline {
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.2em;
+    color: #7c7c7c;
+    display: flex;
+    justify-content: center;
+}
+
+#head .tagly a {
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.2em;
+    color: #7c7c7c;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------- Navegacion en navbar ------------------------------- */
+
+.navbar {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 20px;
+}
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(107, 115, 128);
+    text-transform: uppercase;
+    font-size: medium;
+    text-decoration: none;
+}
+.menu-horizontal > li:hover {
+    background-color: rgb(143, 137, 137);
+}
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    font-size: medium;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+.menu-vertical > li:hover {
+    background-color: rgb(233, 233, 233);
+}
+.menu-vertical li a {
+    display: block;
+    color: aliceblue;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+.despacio {
+    transition-duration: 0.09s;
+}
+
+/* ------------------------------------------------------------container */
+.container1 {
+    min-width: 100%;
+}
+
+.extractoGral {
+    padding: 20 0 0 0;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------Section - container2 */
+.container2 {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 30 0 30 0px;
+}
+.container2 h3 {
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    vertical-align: middle;
+    margin: 0 0 25px 0;
+}
+
+.container3 {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    display: grid;
+    grid-template-columns: 400px 400px 400px; /*Aqui segun la cantidad de numeros que pongas es la cantidad. */
+    grid-template-rows: auto;
+    justify-content: space-around;
+    column-gap: 30px;
+    row-gap: 10px;
+    margin: 0px 0px 30px 0px;
+}
+
+/* Section - Recent works */
+.thumbnails {
+    padding: 0;
+}
+.thumbnails li {
+    margin-bottom: 30px;
+}
+.thumbnail {
+    display: block;
+    -webkit-border-radius: 0;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 0;
+    -moz-background-clip: padding;
+    border-radius: 0;
+    background-clip: padding-box;
+    border: 0 none;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+.thumbnail .img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    height: 180px;
+    margin: 0 0 20px;
+    position: relative;
+}
+.thumbnail .title {
+    text-transform: uppercase;
+    margin: 0 2em;
+    display: block;
+    text-indent: 0;
+}
+.thumbnail .cover {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    width: 100%;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -ms-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 550ms;
+    -moz-transition-duration: 550ms;
+    -o-transition-duration: 550ms;
+    transition-duration: 550ms;
+}
+.thumbnail .cover .more {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 20px;
+    -webkit-border-radius: 1px 0 0 1px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 1px 0 0 1px;
+    -moz-background-clip: padding;
+    border-radius: 1px 0 0 1px;
+    background-clip: padding-box;
+    font-size: 12px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0px #780d33;
+    background: #bd1550;
+    color: white;
+}
+.thumbnail img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.thumbnail:hover {
+    color: #333;
+    text-decoration: none;
+}
+/* .thumbnail:hover img {
+    -webkit-filter: saturate(0%);
+} */
+
+.thumbnail:hover .cover {
+    opacity: 1;
+}
+
+.section-title,
+.entry-title {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px 0 25px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+.section-title a,
+.entry-title a {
+    color: #333333;
+}
+.section-title span,
+.entry-title span {
+    display: inline-block;
+    position: relative;
+}
+.section-title span:before,
+.entry-title span:before,
+.section-title span:after,
+.entry-title span:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: 0.53em;
+    width: 400%;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.section-title span:before,
+.entry-title span:before {
+    right: 100%;
+    margin-right: 45px;
+}
+.section-title span:after,
+.entry-title span:after {
+    left: 100%;
+    margin-left: 75px;
+}
+
+.MyClients {
+    display: flex;
+    justify-content: center;
+}
+
+/* Formulario */
+
+input,
+textarea {
+    border: 0;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgb(168, 156, 162);
+    font-size: 1em;
+}
+
+.extractoContact {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Le da estilo */
+.input {
+    border: 4px solid rgb(184, 184, 184);
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    border-radius: 20px;
+    line-height: 0.5em;
+    margin: 1em 0 0.5em;
+    cursor: auto;
+}
+
+.input:focus {
+    border: 4px inset rgb(201, 255, 5);
+}
+
+.form-button {
+    background-color: rgb(190, 189, 190);
+    border: 3px outset rgb(170, 168, 169);
+    color: rgb(83, 80, 81);
+    padding: 0.75rem 2.5rem;
+    border-radius: 20px;
+    width: fit-content;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: rgb(190, 190, 190);
+    border: 3px outset rgb(110, 102, 108);
+    box-shadow: 0 1px 15px rgb(201, 255, 5);
+    font-size: 1em;
+    font-weight: 600;
+}
+/* fin del formulario */
+
+.name {
+    text-align: center;
+}
+
+#footer {
+    background: #232323;
+    padding: 30px 0 0 0;
+    font-size: 12px;
+    color: #999;
+}
+#footer a {
+    color: #ccc;
+}
+#footer a:hover {
+    color: #fff;
+}
+#footer h3.widget-title {
+    font-size: 15px;
+
+    text-transform: uppercase;
+    color: #ccc;
+    margin: 0 0 20px;
+}
+
+#footer .containerFoo {
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px; /*Aqui segun la cantidad de numeros que pongas es la cantidad. */
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    column-gap: 3px;
+}
+#footer .losFoo {
+    text-align: center;
+}
+
+.fa {
+    color: white;
+    padding: 1px;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+.fa:hover {
+    opacity: 0.5;
+    text-shadow: 1px 1px 5px 5px lightblue;
+}
+
+#underfooter {
+    background: #191919;
+    padding: 15px 0;
+    color: #777;
+    font-size: 12px;
+}
+
+#underfooter .containerUnderFoo {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: space-evenly;
+}
+
+.losUnder {
+    /* La diferencia entre ponerlo y no ponerlo es */
+    text-align: center;
+}
+
+#underfooter a {
+    color: #aaa;
+}
+#underfooter a:hover {
+    color: #fff;
+}
+#underfooter p {
+    margin: 0;
+}
+
+p {
+    line-height: 1.6em;
+    margin: 0 0 30px 0;
+}
+ul,
+ol {
+    line-height: 1.6em;
+    margin: 0 0 30px 0;
+}
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 30px;
+    border-left: 5px solid #eee;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Open sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
+h1 {
+    font-size: 40px;
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 36px;
+    font-size: 2.25rem;
+}
+h3 {
+    font-size: 30px;
+    font-size: 1.875rem;
+}
+h4 {
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+a {
+    color: #bd1550;
+}
+a:hover {
+    color: #e93675;
+}
+
+.text-msg {
+    line-height: 1.7em;
+    color: #b3b3b3;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-top: -0.23em;
+}
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Formato celular */
+@media screen and (max-width: 480px) {
+
+    #head {
+        max-width: max-content;
+    }
+
+    .headPrimerDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        width: auto;
+        text-align: center;
+    }
+
+
+    .theClients {
+        display: none;
+    }
+
+    #footer .containerFoo {
+        font-size: 13px;
+        display: grid;
+        grid-template-columns: auto; /*Aqui segun la cantidad de numeros que pongas es la cantidad. */
+        grid-template-rows: 200px 200px 200px;
+    }
+
+    #underfooter .containerUnderFoo {
+        display: flex;
+    }
+
+    .container3, .container2{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
